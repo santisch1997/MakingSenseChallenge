@@ -1,11 +1,8 @@
 // src/components/Chart.jsx
 import React from 'react';
-import styled from 'styled-components';
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { GraphContainer } from './Chart.styles';
 
-const GraphContainer = styled.div`
-  height: 300px; 
-`;
 
 const Chart = ({ data }) => {
   return (
