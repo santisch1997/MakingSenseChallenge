@@ -26,6 +26,14 @@ export const Card = styled.div`
     background: ${(props) => props.lineColor};
     border-radius: 10px 10px 0 0;
   }
+
+  @media (max-width: 1006px) {
+    flex: 1 1 100%;
+    max-width: 300px;  // Limita el ancho máximo para que no sea demasiado grande
+    margin: 10px auto;  // Centra las tarjetas horizontalmente y añade margen entre ellas
+  }
+
+
 `;
 
 export const Line1 = styled.div`

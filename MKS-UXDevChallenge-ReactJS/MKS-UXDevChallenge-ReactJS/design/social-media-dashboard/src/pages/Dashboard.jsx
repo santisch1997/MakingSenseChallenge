@@ -22,6 +22,7 @@ const DashboardContainer = styled.div`
 
   @media (max-width: 480px) {
     padding: 25px;
+    
   }
 `;
 
@@ -86,6 +87,10 @@ const CardsContainer = styled.div`
   gap: 20px;
   margin-bottom: 40px;
 
+    @media (max-width: 1030px) {
+ grid-template-columns: repeat(2, 1fr);
+    gap: 10px;  }
+    
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;

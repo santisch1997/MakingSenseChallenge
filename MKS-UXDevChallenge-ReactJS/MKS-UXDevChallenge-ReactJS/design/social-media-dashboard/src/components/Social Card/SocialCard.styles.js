@@ -10,6 +10,8 @@ export const Card = styled.div`
   text-align: center;
   transition: background 0.3s;
   position: relative;
+  cursor: pointer;
+
 
   &:hover {
     background: ${(props) => props.theme.cardBgHover}; 
@@ -63,8 +65,13 @@ export const Followers = styled.p`
   font-weight: bold;
   margin: 0;
 
+   @media (max-width: 768px) {
+    font-size: 45px;
+    font-weight: bold; 
+  }
+
   @media (max-width: 480px) {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold; 
   }
 `;
